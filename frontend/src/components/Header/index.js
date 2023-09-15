@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../feature/userSlice";
-
+import { application } from "express";
+// app.use(express.json())
 function Header() {
   const user = useSelector(selectUser);
   // console.log(user);
